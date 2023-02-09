@@ -13,6 +13,7 @@ const userSchema = new Schema({
     lowercase: true,
     required: true
   },
+  profile: {type: mongoose.Schema.Types.ObjectId, ref: 'Profile'},
   password: {
     type: String,
     required: true
